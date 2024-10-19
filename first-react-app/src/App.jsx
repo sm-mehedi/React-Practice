@@ -2,13 +2,22 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Products from './Components/Products/Products'
+// import Products from './Components/Products/Products'
+import Products from './Components/Products/Products'; // Adjust the path if necessary
+
 function App() {
   const [count, setCount] = useState(0)
 
+  const obj1 = {
+    name:"S. M MEHEDI HASAN",
+    id:"016003345",
+
+
+  }; // eslint-disable-line no-unused-vars
   return (
     <>
-      <Products></Products>
+      <Products info={obj1}></Products>
+
 
       <div>
 

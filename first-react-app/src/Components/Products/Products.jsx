@@ -1,14 +1,10 @@
-import React from 'react';
-
 import Product from '../Product/Product';
-export default function Products(){
-    return(
-        <div>
-        <h3> Hey its my first react</h3>
-        <Product></Product>
-        
-        </div>
-    )
 
-    
+export default function Products({ info }) {
+    return (
+        <div>
+            <h3>Hey, its my first React app!</h3>
+            <Product info={info}></Product>
+        </div>
+    );
 }
